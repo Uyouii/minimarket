@@ -12,23 +12,22 @@
 
 ### 项目结构
 
-- [**`authserver`**](https://git.garena.com/taiyou.dong/minimarkettask/-/tree/master/authserver): go tcp server, 授权服务器
-- [**`crawler`**](https://git.garena.com/taiyou.dong/minimarkettask/-/tree/master/crawler): 爬虫项目，爬取https://shopee.sg 商品和评论
-  - [数据文件位置](https://git.garena.com/taiyou.dong/markettaskshopeedata)  
-- [**`marketserver`**](https://git.garena.com/taiyou.dong/minimarkettask/-/tree/master/marketserver): Django 服务器
-- [**`sql`**](https://git.garena.com/taiyou.dong/minimarkettask/-/tree/master/sql): 数据库创建sql文件
-- [**`test`**](https://git.garena.com/taiyou.dong/minimarkettask/-/tree/master/test): 测试及压测文件
-- [**`doc`**](https://git.garena.com/taiyou.dong/minimarkettask/-/tree/master/doc): 项目文档
-  - [api.md](https://git.garena.com/taiyou.dong/minimarkettask/-/blob/master/doc/api.md): 接口文档
-  - [perforamcetesting.md](https://git.garena.com/taiyou.dong/minimarkettask/-/blob/master/doc/perforamcetesting.md): 性能测试文档
+- [**`authserver`**](https://github.com/Uyouii/minimarket/tree/master/authserver): go tcp server, 授权服务器
+- [**`crawler`**](https://github.com/Uyouii/minimarket/tree/master/crawler): 爬虫项目，爬取https://shopee.sg 商品和评论
+- [**`marketserver`**](https://github.com/Uyouii/minimarket/tree/master/marketserver): Django 服务器
+- [**`sql`**](https://github.com/Uyouii/minimarket/tree/master/sql): 数据库创建sql文件
+- [**`test`**](https://github.com/Uyouii/minimarket/tree/master/test): 测试及压测文件
+- [**`doc`**](https://github.com/Uyouii/minimarket/tree/master/doc): 项目文档
+  - [api.md](https://github.com/Uyouii/minimarket/blob/master/doc/api.md): 接口文档
+  - [perforamcetesting.md](https://github.com/Uyouii/minimarket/blob/master/doc/perforamcetesting.md): 性能测试文档
 
 ### 运行
 
-[依赖安装记录](https://git.garena.com/taiyou.dong/minimarkettask/-/blob/master/doc/projectrecord.md)
+[依赖安装记录](https://github.com/Uyouii/minimarket/blob/master/doc/projectrecord.md)
 
 #### 开启nginx
 
-[nginx 配置](https://git.garena.com/taiyou.dong/minimarkettask/-/blob/master/marketserver/nginx.conf)
+[nginx 配置](https://github.com/Uyouii/minimarket/blob/master/marketserver/nginx.conf)
 
 ```sh
 ulimit -n 65535
@@ -47,7 +46,7 @@ go build
 
 #### 开启gunicorn
 
-[gunicorn配置](https://git.garena.com/taiyou.dong/minimarkettask/-/blob/master/marketserver/gunicorn.conf.py)
+[gunicorn配置](https://github.com/Uyouii/minimarket/blob/master/marketserver/gunicorn.conf.py)
 
 ```sh
 cd minimarkettask/marketserver
@@ -57,7 +56,7 @@ gunicorn -c gunicorn.conf.py marketserver.wsgi:application
 
 #### 接口测试
 
-[接口文档](https://git.garena.com/taiyou.dong/minimarkettask/-/blob/master/doc/api.md)
+[接口文档](https://github.com/Uyouii/minimarket/blob/master/doc/api.md)
 
 ```sh
 cd minimarkettask/test
@@ -79,7 +78,7 @@ getcommentresponses [username] [commentid] [pagesize=20] [curpage=0]
 
 #### 性能测试
 
-[性能测试文档](https://git.garena.com/taiyou.dong/minimarkettask/-/blob/master/doc/perforamcetesting.md)
+[性能测试文档](https://github.com/Uyouii/minimarket/blob/master/doc/perforamcetesting.md)
 
 ```sh
 cd minimarkettask/test/wrk_test

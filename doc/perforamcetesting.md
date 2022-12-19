@@ -18,7 +18,7 @@ Transfer/sec:      1.30MB
 ```
 
 - **压测工具** : wrk
-- **压测脚本**: [login.lua](https://git.garena.com/taiyou.dong/minimarkettask/-/blob/master/test/wrk_test/login.lua)
+- **压测脚本**: [login.lua](https://github.com/Uyouii/minimarket/blob/master/test/wrk_test/login.lua)
 
 - **随机用户数量**：400
 - **压测时间**：10.08s
