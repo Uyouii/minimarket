@@ -20,6 +20,7 @@
 - [**`doc`**](https://github.com/Uyouii/minimarket/tree/master/doc): 项目文档
   - [api.md](https://github.com/Uyouii/minimarket/blob/master/doc/api.md): 接口文档
   - [perforamcetesting.md](https://github.com/Uyouii/minimarket/blob/master/doc/perforamcetesting.md): 性能测试文档
+  - [minimarket.pptx](https://github.com/Uyouii/minimarket/blob/master/doc/minimarket.pptx): 架构简介ppt
 
 ### 运行
 
